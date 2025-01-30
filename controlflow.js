@@ -48,7 +48,7 @@ switch (Day) {
     default:
         console.log(`not a valid dayy`);
         
-        break;
+        break
 }
 //falsy value = false, "" ,bigint0n,  null, undefinned, NaN, 0, -0 ;
 //Truthy value = [], function(){}, {} " ","0"," ","false";
