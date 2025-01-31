@@ -1,4 +1,4 @@
-//for of loop mostly use for arrays no need of incrementation
+//for of loop mostly use for arrays and in for of no need of incrementation
 const arr1=[1,2,3,4,5,6];
 for (const num of arr1) {
     // console.log(num);
