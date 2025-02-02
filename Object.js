@@ -3,13 +3,13 @@ const MyObject=
 {
 
     Firstname:"Samarpit",
-    "LastName":"jain",
-    [myKey]:"Symbolkey",
+    LastName:"jain",
+    [myKey]:Symbol("Symbolkey"),
     Age:20,
     Email:"samarpitjainsj3@gmail.com",
     islogined:false,
 }
 const {Firstname: Name}=MyObject//deconstruct(Firstname:Name)
-console.log(Firstname);
+console.log(Name);
 
 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black ; color:white;">
+    
+</body>
+<script>
+    const div=document.createElement('div')
+    console.log(div);
+    div.className="parent"
+    div.id="firstdiv"
+    div.innerText="Samarpit"
+    div.style.backgroundColor='green'
+    const addtext=document.createTextNode(" jain")
+    div.appendChild(addtext)
+    document.body.appendChild(div)
+
+    
+    const changecolour=function(div)
+    {
+        const arr=["red","pink","aqua"]
+        for (let i = 0; i < div.length; i++) {
+            div.style.backgroundColor=arr[i]
+            
+        }
+    }
+</script>
+</html>

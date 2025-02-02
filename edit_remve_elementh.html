@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>hindi</li>
+    </ul>
+    
+</body>
+<script>
+    //insertion/append 
+    function addlanguage(langName)
+    {
+        const li=document.createElement('li');
+        li.innerHTML=`${langName}`;
+        document.querySelector('.language').
+        appendChild(li)
+    
+    }
+    //optimal approach 
+    function addOptLanguag(langName)
+    {
+        const li=document.createElement('li');
+        li.append(document.createTextNode(langName))
+        document.querySelector('.language').append(li)
+    }
+    addlanguage("bundelkhandi");
+    addlanguage("english")
+    addOptLanguag('panjabi')
+   //edit
+    const SecElement=document.querySelector('li:nth-child(2)');
+    //not a optimal approach//
+
+    SecElement.innerHTML="moji"
+    
+    //optimal approach
+    const newli=document.createElement('li')
+    newli.textContent="marathi"
+    SecElement.replaceWith(newli)
+    //SecElement.removeChild()
+
+    //remove 
+    const lastLang=document.querySelector('li:last-child')
+    lastLang.remove()
+    
+</script>
+
+</html>
