@@ -7,9 +7,9 @@
 </head>
 <body>
     <div class="card">
-        <img src="img_avatar.png" alt="Avatar" style="width:100%">
+        <img src="" alt="Avatar" style="width:100%">
         <div class="container">
-          <h4>John Doe</h4>
+          <h4></h4>
           <p>Architect & Engineer</p>
         </div>
       </div>
@@ -34,9 +34,8 @@
                 console.log(xml.responseText);
                 const data = JSON.parse(xml.responseText);
                 document.querySelector(".card img").setAttribute("src" , `${data.avatar_url}`);
-                document.querySelector("h4").innerHTML = `${data.name} , Followers : ${data.followers}`;
+                document.querySelector("h4").innerHTML = `${data.login} , Followers : ${data.followers}`;
                 document.querySelector("h4").style.fontWeight = `bold`;
-                document.querySelector("p").innerHTML = `${data.bio}  ${data.blog}`
     
             }
         }
